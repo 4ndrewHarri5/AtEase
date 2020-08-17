@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C5E6AAE0317C913469C0E56 /* Pods_AtEase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64738BAE02E0162F4F5B0CE /* Pods_AtEase.framework */; };
+		6F281A4124EA7C6D00F52083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F281A4024EA7C6D00F52083 /* AppDelegate.swift */; };
+		6F281A4324EA7C6D00F52083 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F281A4224EA7C6D00F52083 /* SceneDelegate.swift */; };
+		6F281A4824EA7C6D00F52083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F281A4624EA7C6D00F52083 /* Main.storyboard */; };
+		6F281A4A24EA7C6D00F52083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F281A4924EA7C6D00F52083 /* Assets.xcassets */; };
+		6F281A4D24EA7C6D00F52083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F281A4B24EA7C6D00F52083 /* LaunchScreen.storyboard */; };
+		6F281A5824EA7C6E00F52083 /* AtEaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F281A5724EA7C6E00F52083 /* AtEaseTests.swift */; };
+		6F281A6324EA7C6E00F52083 /* AtEaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F281A6224EA7C6E00F52083 /* AtEaseUITests.swift */; };
+		6F7E71EB24EA819400BDFE64 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E71EA24EA819400BDFE64 /* HomeViewController.swift */; };
+		6F7E71F024EA857200BDFE64 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E71EE24EA857200BDFE64 /* WeatherCollectionViewCell.swift */; };
+		6F7E71F124EA857200BDFE64 /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7E71EF24EA857200BDFE64 /* WeatherCollectionViewCell.xib */; };
+		6F7E71F724EA9D1800BDFE64 /* CrimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E71F524EA9D1800BDFE64 /* CrimeCollectionViewCell.swift */; };
+		6F7E71F824EA9D1800BDFE64 /* CrimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7E71F624EA9D1800BDFE64 /* CrimeCollectionViewCell.xib */; };
+		6F7E71FB24EA9EBD00BDFE64 /* HalfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E71FA24EA9EBD00BDFE64 /* HalfCell.swift */; };
+		6F7E71FD24EA9F1100BDFE64 /* FullCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E71FC24EA9F1100BDFE64 /* FullCell.swift */; };
+		6F7E71FF24EA9F5900BDFE64 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E71FE24EA9F5900BDFE64 /* MainCell.swift */; };
+		6F7E720124EA9F9600BDFE64 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E720024EA9F9600BDFE64 /* Cell.swift */; };
+		6F7E720524EAA0DF00BDFE64 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E720324EAA0DF00BDFE64 /* MainCollectionViewCell.swift */; };
+		6F7E720624EAA0DF00BDFE64 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7E720424EAA0DF00BDFE64 /* MainCollectionViewCell.xib */; };
+		6F7E720824EAA54C00BDFE64 /* Crime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E720724EAA54C00BDFE64 /* Crime.swift */; };
+		6F7E720A24EAA55500BDFE64 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E720924EAA55500BDFE64 /* Weather.swift */; };
+		6F7E720D24EAA75F00BDFE64 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E720C24EAA75F00BDFE64 /* Shadow.swift */; };
+		6F7E720F24EAA88D00BDFE64 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E720E24EAA88D00BDFE64 /* Colours.swift */; };
+		6F7E721124EAAAB600BDFE64 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E721024EAAAB600BDFE64 /* Gradient.swift */; };
+		6F7E721324EAAC3000BDFE64 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E721224EAAC3000BDFE64 /* Home.swift */; };
+		6F7E721624EAB20E00BDFE64 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E721524EAB20E00BDFE64 /* Images.swift */; };
+		6F7E721B24EABC9B00BDFE64 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E721924EABC9B00BDFE64 /* HeaderCollectionReusableView.swift */; };
+		6F7E721C24EABC9B00BDFE64 /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7E721A24EABC9B00BDFE64 /* HeaderCollectionReusableView.xib */; };
+		6F7E722324EABD4700BDFE64 /* TitleHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E722124EABD4700BDFE64 /* TitleHeaderCollectionReusableView.swift */; };
+		6F7E722424EABD4700BDFE64 /* TitleHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7E722224EABD4700BDFE64 /* TitleHeaderCollectionReusableView.xib */; };
+		6F7E722624EAC3B400BDFE64 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E722524EAC3B400BDFE64 /* StartViewController.swift */; };
+		6F7E722824EAC4DC00BDFE64 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E722724EAC4DC00BDFE64 /* DataService.swift */; };
+		76B150D5B33B43D8B2DEECF6 /* Pods_AtEaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58DA9D9766B5BEFC64A3BA3 /* Pods_AtEaseTests.framework */; };
+		A5FEBB703563B99518FACDA0 /* Pods_AtEase_AtEaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AF23B5BF14B5AAFB4C5CB7 /* Pods_AtEase_AtEaseUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F281A5424EA7C6E00F52083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F281A3524EA7C6D00F52083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F281A3C24EA7C6D00F52083;
+			remoteInfo = AtEase;
+		};
+		6F281A5F24EA7C6E00F52083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F281A3524EA7C6D00F52083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F281A3C24EA7C6D00F52083;
+			remoteInfo = AtEase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04AF23B5BF14B5AAFB4C5CB7 /* Pods_AtEase_AtEaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtEase_AtEaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B81B5A9EE5850DCC56E9BCA /* Pods-AtEaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtEaseTests.debug.xcconfig"; path = "Target Support Files/Pods-AtEaseTests/Pods-AtEaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A54058569508B269ECAD661 /* Pods-AtEase-AtEaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtEase-AtEaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-AtEase-AtEaseUITests/Pods-AtEase-AtEaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F281A3D24EA7C6D00F52083 /* AtEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F281A4024EA7C6D00F52083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F281A4224EA7C6D00F52083 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6F281A4724EA7C6D00F52083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F281A4924EA7C6D00F52083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F281A4C24EA7C6D00F52083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F281A4E24EA7C6D00F52083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F281A5324EA7C6E00F52083 /* AtEaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtEaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F281A5724EA7C6E00F52083 /* AtEaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtEaseTests.swift; sourceTree = "<group>"; };
+		6F281A5924EA7C6E00F52083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F281A5E24EA7C6E00F52083 /* AtEaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtEaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F281A6224EA7C6E00F52083 /* AtEaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtEaseUITests.swift; sourceTree = "<group>"; };
+		6F281A6424EA7C6E00F52083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F7E71EA24EA819400BDFE64 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6F7E71EE24EA857200BDFE64 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		6F7E71EF24EA857200BDFE64 /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
+		6F7E71F524EA9D1800BDFE64 /* CrimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		6F7E71F624EA9D1800BDFE64 /* CrimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CrimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		6F7E71FA24EA9EBD00BDFE64 /* HalfCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfCell.swift; sourceTree = "<group>"; };
+		6F7E71FC24EA9F1100BDFE64 /* FullCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullCell.swift; sourceTree = "<group>"; };
+		6F7E71FE24EA9F5900BDFE64 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		6F7E720024EA9F9600BDFE64 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		6F7E720324EAA0DF00BDFE64 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		6F7E720424EAA0DF00BDFE64 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
+		6F7E720724EAA54C00BDFE64 /* Crime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crime.swift; sourceTree = "<group>"; };
+		6F7E720924EAA55500BDFE64 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		6F7E720C24EAA75F00BDFE64 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		6F7E720E24EAA88D00BDFE64 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		6F7E721024EAAAB600BDFE64 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		6F7E721224EAAC3000BDFE64 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		6F7E721524EAB20E00BDFE64 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		6F7E721924EABC9B00BDFE64 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		6F7E721A24EABC9B00BDFE64 /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		6F7E722124EABD4700BDFE64 /* TitleHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		6F7E722224EABD4700BDFE64 /* TitleHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		6F7E722524EAC3B400BDFE64 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		6F7E722724EAC4DC00BDFE64 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		71D87D2940174BBDBAFF4CCC /* Pods-AtEase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtEase.debug.xcconfig"; path = "Target Support Files/Pods-AtEase/Pods-AtEase.debug.xcconfig"; sourceTree = "<group>"; };
+		8BA950D43EBBA89E5F5B66A4 /* Pods-AtEase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtEase.release.xcconfig"; path = "Target Support Files/Pods-AtEase/Pods-AtEase.release.xcconfig"; sourceTree = "<group>"; };
+		9E536417C3832462DB30C094 /* Pods-AtEaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtEaseTests.release.xcconfig"; path = "Target Support Files/Pods-AtEaseTests/Pods-AtEaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		C64738BAE02E0162F4F5B0CE /* Pods_AtEase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtEase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F58DA9D9766B5BEFC64A3BA3 /* Pods_AtEaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtEaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF002E7BC16AACDC5D3A122 /* Pods-AtEase-AtEaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtEase-AtEaseUITests.release.xcconfig"; path = "Target Support Files/Pods-AtEase-AtEaseUITests/Pods-AtEase-AtEaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F281A3A24EA7C6D00F52083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C5E6AAE0317C913469C0E56 /* Pods_AtEase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F281A5024EA7C6E00F52083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B150D5B33B43D8B2DEECF6 /* Pods_AtEaseTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F281A5B24EA7C6E00F52083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FEBB703563B99518FACDA0 /* Pods_AtEase_AtEaseUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F281A3424EA7C6D00F52083 = {
+			isa = PBXGroup;
+			children = (
+				6F281A3F24EA7C6D00F52083 /* AtEase */,
+				6F281A5624EA7C6E00F52083 /* AtEaseTests */,
+				6F281A6124EA7C6E00F52083 /* AtEaseUITests */,
+				6F281A3E24EA7C6D00F52083 /* Products */,
+				BEDA7B2255D61BFF04EF1567 /* Pods */,
+				7D6350C22C1CF6D2AAF1DFB9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6F281A3E24EA7C6D00F52083 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F281A3D24EA7C6D00F52083 /* AtEase.app */,
+				6F281A5324EA7C6E00F52083 /* AtEaseTests.xctest */,
+				6F281A5E24EA7C6E00F52083 /* AtEaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F281A3F24EA7C6D00F52083 /* AtEase */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E720B24EAA75400BDFE64 /* util */,
+				6F7E71F924EA9E8800BDFE64 /* Models */,
+				6F7E71EC24EA850800BDFE64 /* Views */,
+				6F281A4024EA7C6D00F52083 /* AppDelegate.swift */,
+				6F281A4224EA7C6D00F52083 /* SceneDelegate.swift */,
+				6F281A4624EA7C6D00F52083 /* Main.storyboard */,
+				6F281A4924EA7C6D00F52083 /* Assets.xcassets */,
+				6F281A4B24EA7C6D00F52083 /* LaunchScreen.storyboard */,
+				6F281A4E24EA7C6D00F52083 /* Info.plist */,
+				6F7E71EA24EA819400BDFE64 /* HomeViewController.swift */,
+				6F7E722524EAC3B400BDFE64 /* StartViewController.swift */,
+				6F7E722724EAC4DC00BDFE64 /* DataService.swift */,
+			);
+			path = AtEase;
+			sourceTree = "<group>";
+		};
+		6F281A5624EA7C6E00F52083 /* AtEaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F281A5724EA7C6E00F52083 /* AtEaseTests.swift */,
+				6F281A5924EA7C6E00F52083 /* Info.plist */,
+			);
+			path = AtEaseTests;
+			sourceTree = "<group>";
+		};
+		6F281A6124EA7C6E00F52083 /* AtEaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F281A6224EA7C6E00F52083 /* AtEaseUITests.swift */,
+				6F281A6424EA7C6E00F52083 /* Info.plist */,
+			);
+			path = AtEaseUITests;
+			sourceTree = "<group>";
+		};
+		6F7E71EC24EA850800BDFE64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E721E24EABD2B00BDFE64 /* TitleHeader */,
+				6F7E720224EAA0D200BDFE64 /* Main */,
+				6F7E71F424EA9D0500BDFE64 /* Crime */,
+				6F7E71ED24EA851300BDFE64 /* Weather */,
+				6F7E721D24EABD1D00BDFE64 /* SectionHeader */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6F7E71ED24EA851300BDFE64 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E71EE24EA857200BDFE64 /* WeatherCollectionViewCell.swift */,
+				6F7E71EF24EA857200BDFE64 /* WeatherCollectionViewCell.xib */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		6F7E71F424EA9D0500BDFE64 /* Crime */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E71F524EA9D1800BDFE64 /* CrimeCollectionViewCell.swift */,
+				6F7E71F624EA9D1800BDFE64 /* CrimeCollectionViewCell.xib */,
+			);
+			path = Crime;
+			sourceTree = "<group>";
+		};
+		6F7E71F924EA9E8800BDFE64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E721424EAB03D00BDFE64 /* Cell */,
+				6F7E720724EAA54C00BDFE64 /* Crime.swift */,
+				6F7E720924EAA55500BDFE64 /* Weather.swift */,
+				6F7E721224EAAC3000BDFE64 /* Home.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F7E720224EAA0D200BDFE64 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E720324EAA0DF00BDFE64 /* MainCollectionViewCell.swift */,
+				6F7E720424EAA0DF00BDFE64 /* MainCollectionViewCell.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6F7E720B24EAA75400BDFE64 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E720C24EAA75F00BDFE64 /* Shadow.swift */,
+				6F7E720E24EAA88D00BDFE64 /* Colours.swift */,
+				6F7E721024EAAAB600BDFE64 /* Gradient.swift */,
+				6F7E721524EAB20E00BDFE64 /* Images.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		6F7E721424EAB03D00BDFE64 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E71FA24EA9EBD00BDFE64 /* HalfCell.swift */,
+				6F7E71FC24EA9F1100BDFE64 /* FullCell.swift */,
+				6F7E71FE24EA9F5900BDFE64 /* MainCell.swift */,
+				6F7E720024EA9F9600BDFE64 /* Cell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6F7E721D24EABD1D00BDFE64 /* SectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E721924EABC9B00BDFE64 /* HeaderCollectionReusableView.swift */,
+				6F7E721A24EABC9B00BDFE64 /* HeaderCollectionReusableView.xib */,
+			);
+			path = SectionHeader;
+			sourceTree = "<group>";
+		};
+		6F7E721E24EABD2B00BDFE64 /* TitleHeader */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E722124EABD4700BDFE64 /* TitleHeaderCollectionReusableView.swift */,
+				6F7E722224EABD4700BDFE64 /* TitleHeaderCollectionReusableView.xib */,
+			);
+			path = TitleHeader;
+			sourceTree = "<group>";
+		};
+		7D6350C22C1CF6D2AAF1DFB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C64738BAE02E0162F4F5B0CE /* Pods_AtEase.framework */,
+				04AF23B5BF14B5AAFB4C5CB7 /* Pods_AtEase_AtEaseUITests.framework */,
+				F58DA9D9766B5BEFC64A3BA3 /* Pods_AtEaseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEDA7B2255D61BFF04EF1567 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71D87D2940174BBDBAFF4CCC /* Pods-AtEase.debug.xcconfig */,
+				8BA950D43EBBA89E5F5B66A4 /* Pods-AtEase.release.xcconfig */,
+				6A54058569508B269ECAD661 /* Pods-AtEase-AtEaseUITests.debug.xcconfig */,
+				FBF002E7BC16AACDC5D3A122 /* Pods-AtEase-AtEaseUITests.release.xcconfig */,
+				5B81B5A9EE5850DCC56E9BCA /* Pods-AtEaseTests.debug.xcconfig */,
+				9E536417C3832462DB30C094 /* Pods-AtEaseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F281A3C24EA7C6D00F52083 /* AtEase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F281A6724EA7C6E00F52083 /* Build configuration list for PBXNativeTarget "AtEase" */;
+			buildPhases = (
+				DF57F985A3E2E08EA7728198 /* [CP] Check Pods Manifest.lock */,
+				6F281A3924EA7C6D00F52083 /* Sources */,
+				6F281A3A24EA7C6D00F52083 /* Frameworks */,
+				6F281A3B24EA7C6D00F52083 /* Resources */,
+				7340187042666D0315617E8E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtEase;
+			productName = AtEase;
+			productReference = 6F281A3D24EA7C6D00F52083 /* AtEase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F281A5224EA7C6E00F52083 /* AtEaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F281A6A24EA7C6E00F52083 /* Build configuration list for PBXNativeTarget "AtEaseTests" */;
+			buildPhases = (
+				AA4D7AF63C410E0D3AAB09EB /* [CP] Check Pods Manifest.lock */,
+				6F281A4F24EA7C6E00F52083 /* Sources */,
+				6F281A5024EA7C6E00F52083 /* Frameworks */,
+				6F281A5124EA7C6E00F52083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F281A5524EA7C6E00F52083 /* PBXTargetDependency */,
+			);
+			name = AtEaseTests;
+			productName = AtEaseTests;
+			productReference = 6F281A5324EA7C6E00F52083 /* AtEaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F281A5D24EA7C6E00F52083 /* AtEaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F281A6D24EA7C6E00F52083 /* Build configuration list for PBXNativeTarget "AtEaseUITests" */;
+			buildPhases = (
+				D2D18A1A15894DB167657DEF /* [CP] Check Pods Manifest.lock */,
+				6F281A5A24EA7C6E00F52083 /* Sources */,
+				6F281A5B24EA7C6E00F52083 /* Frameworks */,
+				6F281A5C24EA7C6E00F52083 /* Resources */,
+				717568C65644B1DE3F6FBE74 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F281A6024EA7C6E00F52083 /* PBXTargetDependency */,
+			);
+			name = AtEaseUITests;
+			productName = AtEaseUITests;
+			productReference = 6F281A5E24EA7C6E00F52083 /* AtEaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F281A3524EA7C6D00F52083 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Andrew Harris";
+				TargetAttributes = {
+					6F281A3C24EA7C6D00F52083 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					6F281A5224EA7C6E00F52083 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 6F281A3C24EA7C6D00F52083;
+					};
+					6F281A5D24EA7C6E00F52083 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 6F281A3C24EA7C6D00F52083;
+					};
+				};
+			};
+			buildConfigurationList = 6F281A3824EA7C6D00F52083 /* Build configuration list for PBXProject "AtEase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F281A3424EA7C6D00F52083;
+			productRefGroup = 6F281A3E24EA7C6D00F52083 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F281A3C24EA7C6D00F52083 /* AtEase */,
+				6F281A5224EA7C6E00F52083 /* AtEaseTests */,
+				6F281A5D24EA7C6E00F52083 /* AtEaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F281A3B24EA7C6D00F52083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7E721C24EABC9B00BDFE64 /* HeaderCollectionReusableView.xib in Resources */,
+				6F281A4D24EA7C6D00F52083 /* LaunchScreen.storyboard in Resources */,
+				6F7E720624EAA0DF00BDFE64 /* MainCollectionViewCell.xib in Resources */,
+				6F7E722424EABD4700BDFE64 /* TitleHeaderCollectionReusableView.xib in Resources */,
+				6F7E71F124EA857200BDFE64 /* WeatherCollectionViewCell.xib in Resources */,
+				6F281A4A24EA7C6D00F52083 /* Assets.xcassets in Resources */,
+				6F281A4824EA7C6D00F52083 /* Main.storyboard in Resources */,
+				6F7E71F824EA9D1800BDFE64 /* CrimeCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F281A5124EA7C6E00F52083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F281A5C24EA7C6E00F52083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		717568C65644B1DE3F6FBE74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AtEase-AtEaseUITests/Pods-AtEase-AtEaseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AtEase-AtEaseUITests/Pods-AtEase-AtEaseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AtEase-AtEaseUITests/Pods-AtEase-AtEaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7340187042666D0315617E8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AtEase/Pods-AtEase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AtEase/Pods-AtEase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AtEase/Pods-AtEase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA4D7AF63C410E0D3AAB09EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AtEaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2D18A1A15894DB167657DEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AtEase-AtEaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF57F985A3E2E08EA7728198 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AtEase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F281A3924EA7C6D00F52083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F281A4124EA7C6D00F52083 /* AppDelegate.swift in Sources */,
+				6F7E720F24EAA88D00BDFE64 /* Colours.swift in Sources */,
+				6F7E71FD24EA9F1100BDFE64 /* FullCell.swift in Sources */,
+				6F7E721624EAB20E00BDFE64 /* Images.swift in Sources */,
+				6F7E71F024EA857200BDFE64 /* WeatherCollectionViewCell.swift in Sources */,
+				6F7E722624EAC3B400BDFE64 /* StartViewController.swift in Sources */,
+				6F281A4324EA7C6D00F52083 /* SceneDelegate.swift in Sources */,
+				6F7E722324EABD4700BDFE64 /* TitleHeaderCollectionReusableView.swift in Sources */,
+				6F7E721124EAAAB600BDFE64 /* Gradient.swift in Sources */,
+				6F7E720A24EAA55500BDFE64 /* Weather.swift in Sources */,
+				6F7E720824EAA54C00BDFE64 /* Crime.swift in Sources */,
+				6F7E71EB24EA819400BDFE64 /* HomeViewController.swift in Sources */,
+				6F7E721B24EABC9B00BDFE64 /* HeaderCollectionReusableView.swift in Sources */,
+				6F7E720124EA9F9600BDFE64 /* Cell.swift in Sources */,
+				6F7E720D24EAA75F00BDFE64 /* Shadow.swift in Sources */,
+				6F7E722824EAC4DC00BDFE64 /* DataService.swift in Sources */,
+				6F7E71FB24EA9EBD00BDFE64 /* HalfCell.swift in Sources */,
+				6F7E720524EAA0DF00BDFE64 /* MainCollectionViewCell.swift in Sources */,
+				6F7E71FF24EA9F5900BDFE64 /* MainCell.swift in Sources */,
+				6F7E721324EAAC3000BDFE64 /* Home.swift in Sources */,
+				6F7E71F724EA9D1800BDFE64 /* CrimeCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F281A4F24EA7C6E00F52083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F281A5824EA7C6E00F52083 /* AtEaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F281A5A24EA7C6E00F52083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F281A6324EA7C6E00F52083 /* AtEaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F281A5524EA7C6E00F52083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F281A3C24EA7C6D00F52083 /* AtEase */;
+			targetProxy = 6F281A5424EA7C6E00F52083 /* PBXContainerItemProxy */;
+		};
+		6F281A6024EA7C6E00F52083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F281A3C24EA7C6D00F52083 /* AtEase */;
+			targetProxy = 6F281A5F24EA7C6E00F52083 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F281A4624EA7C6D00F52083 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F281A4724EA7C6D00F52083 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F281A4B24EA7C6D00F52083 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F281A4C24EA7C6D00F52083 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F281A6524EA7C6E00F52083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F281A6624EA7C6E00F52083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F281A6824EA7C6E00F52083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D87D2940174BBDBAFF4CCC /* Pods-AtEase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7N4Z55EEQ8;
+				INFOPLIST_FILE = AtEase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewharris.AtEase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F281A6924EA7C6E00F52083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA950D43EBBA89E5F5B66A4 /* Pods-AtEase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7N4Z55EEQ8;
+				INFOPLIST_FILE = AtEase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewharris.AtEase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F281A6B24EA7C6E00F52083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B81B5A9EE5850DCC56E9BCA /* Pods-AtEaseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7N4Z55EEQ8;
+				INFOPLIST_FILE = AtEaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewharris.AtEaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AtEase.app/AtEase";
+			};
+			name = Debug;
+		};
+		6F281A6C24EA7C6E00F52083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E536417C3832462DB30C094 /* Pods-AtEaseTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7N4Z55EEQ8;
+				INFOPLIST_FILE = AtEaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewharris.AtEaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AtEase.app/AtEase";
+			};
+			name = Release;
+		};
+		6F281A6E24EA7C6E00F52083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A54058569508B269ECAD661 /* Pods-AtEase-AtEaseUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7N4Z55EEQ8;
+				INFOPLIST_FILE = AtEaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewharris.AtEaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AtEase;
+			};
+			name = Debug;
+		};
+		6F281A6F24EA7C6E00F52083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF002E7BC16AACDC5D3A122 /* Pods-AtEase-AtEaseUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7N4Z55EEQ8;
+				INFOPLIST_FILE = AtEaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewharris.AtEaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AtEase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F281A3824EA7C6D00F52083 /* Build configuration list for PBXProject "AtEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F281A6524EA7C6E00F52083 /* Debug */,
+				6F281A6624EA7C6E00F52083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F281A6724EA7C6E00F52083 /* Build configuration list for PBXNativeTarget "AtEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F281A6824EA7C6E00F52083 /* Debug */,
+				6F281A6924EA7C6E00F52083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F281A6A24EA7C6E00F52083 /* Build configuration list for PBXNativeTarget "AtEaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F281A6B24EA7C6E00F52083 /* Debug */,
+				6F281A6C24EA7C6E00F52083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F281A6D24EA7C6E00F52083 /* Build configuration list for PBXNativeTarget "AtEaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F281A6E24EA7C6E00F52083 /* Debug */,
+				6F281A6F24EA7C6E00F52083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F281A3524EA7C6D00F52083 /* Project object */;
+}

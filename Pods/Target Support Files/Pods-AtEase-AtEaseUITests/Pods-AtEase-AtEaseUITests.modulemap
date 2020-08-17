@@ -1,0 +1,6 @@
+framework module Pods_AtEase_AtEaseUITests {
+  umbrella header "Pods-AtEase-AtEaseUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
